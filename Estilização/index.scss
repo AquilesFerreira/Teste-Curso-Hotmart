@@ -1,0 +1,64 @@
+@import './variaveis';
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    header{
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        grid-auto-rows: 65px;
+        background-color: $cor-fundo;
+        width: 100%;
+        height: 65px;
+        figure{
+            margin: 0 0 0 20px;
+            display: grid;
+            align-items: center;
+        }
+        nav{
+            ul{
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                gap: 35px;
+                margin: 23px;
+                padding: 0;
+                font-size: $tamanho-fonteTitle;
+                a{
+                    text-decoration: none;
+                    color: $corPrimaria-texto;
+                    li{
+                        display: inline-flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        form{
+            display: inline-flex;
+            align-items: center;
+            input{
+                background-color: transparent;
+                border-width: 0px 0 1px 0;
+                padding: 4px 10px;
+                width: 140px;
+            }
+            button{
+                border: none;
+                background-color: transparent;
+                position: relative;
+                right: 25px;
+                padding: 0;
+            }
+        }
+    }
+
+    main{
+        width: 100%;
+        height: 560px;
+        background-image: url(../Imagens/Teste\ fundo.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
